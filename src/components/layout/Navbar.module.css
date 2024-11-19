@@ -1,0 +1,75 @@
+/* Estilo para a barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    background-color: #FF8C00;
+  padding: 1em;
+}
+
+/* Lista de navegação */
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+    padding: 0;
+}
+
+/* Itens da lista */
+.item {
+  margin-right: 10em;
+    /* Espaçamento entre os itens */
+}
+
+.item:last-child {
+  margin-right: 0;
+  /* Remove o espaçamento do último item */
+}
+
+/* Links */
+.item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #ffbb33;
+  text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    /* Alinha verticalmente */
+    align-items: flex-start;
+  }
+
+  .list {
+    flex-direction: column;
+    /* Alinha itens verticalmente */
+    width: 100%;
+  }
+
+  .item {
+    margin: 0.5em 0;
+    /* Espaçamento entre os itens */
+  }
+}
+
+/* Estilo adicional para telas muito pequenas */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5em;
+  }
+
+  .item a {
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte */
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
