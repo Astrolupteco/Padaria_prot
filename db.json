@@ -1,12 +1,12 @@
 {
   "projects": [
     {
+      "name": "açucar",
+      "budget": "10",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Materia prima"
       },
-      "name": "teste",
-      "budget": "213213",
       "cost": 0,
       "services": [],
       "id": 1
@@ -15,19 +15,15 @@
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Doce"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "name": "Salgado"
     },
     {
       "id": 3,
-      "name": "Design"
-    },
-    {
-      "id": 4,
-      "name": "Planejamento"
+      "name": "Materia prima"
     }
   ]
 }

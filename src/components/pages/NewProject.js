@@ -21,15 +21,15 @@ function NewProject() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        history.push('/projects', { message: 'Projeto criado com sucesso!' })
+        history.push('/projects', { message: 'Produto criado com sucesso!' })
       })
   }
 
   return (
     <div className={styles.newproject_container}>
-      <h1>Criar Projeto</h1>
-      <p>Crie seu projeto para depois adicionar os serviços</p>
-      <ProjectForm handleSubmit={createPost} btnText="Criar Projeto" />
+      <h1>Adicionar Produto</h1>
+      <p>Crie e adicione seu produto</p>
+      <ProjectForm handleSubmit={createPost} btnText="Criar Produto" />
     </div>
   )
 }
