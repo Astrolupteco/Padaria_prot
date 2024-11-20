@@ -1,17 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "açucar",
-      "budget": "10",
-      "category": {
-        "id": "3",
-        "name": "Materia prima"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,
