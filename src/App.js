@@ -8,6 +8,8 @@ import NewProject from './components/pages/NewProject'
 import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
 import Project from './components/pages/Project'
+import PedidosAnteriores from './components/pages/PedidosAnteriores'
+import Funcionario from './components/pages/Funcionario'
 
 function App() {
   return (
@@ -32,6 +34,12 @@ function App() {
           </Route>
           <Route path="/project/:id">
             <Project />
+          </Route>
+          <Route path="/pedidosanteriores">
+            <PedidosAnteriores />
+          </Route>
+          <Route path="/Funcionario">
+            <Funcionario />
           </Route>
         </Container>
       </Switch>

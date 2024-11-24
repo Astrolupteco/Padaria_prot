@@ -9,8 +9,6 @@ import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
-import ServiceForm from '../service/ServiceForm'
-import ServiceCard from '../service/ServiceCard'
 
 function Project() {
   let { id } = useParams()

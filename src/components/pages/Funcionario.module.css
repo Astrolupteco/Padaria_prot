@@ -1,0 +1,121 @@
+/* Estilo Geral */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Caixa de boas-vindas */
+.welcome {
+  background-color: #ffc107; /* Fundo laranja claro */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.welcome-box p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Pedidos */
+.orders {
+  margin-bottom: 20px;
+}
+
+.orders h3 {
+  font-size: 18px;
+  color: #ff9800; /* Título em laranja */
+  margin-bottom: 10px;
+}
+
+.order {
+  background-color: #ffc107;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.order h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.order p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.details-button {
+  background-color: #ff9800; /* Botão laranja */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #e68a00;
+}
+/* Rodapé */
+.footer_button {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.button_list {
+  display: flex; /* Flexbox para alinhar os itens */
+  justify-content: space-between; /* Espaçamento uniforme entre os itens */
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding padrão da lista */
+  margin: 20px 0; /* Adiciona margem vertical */
+}
+
+.button_item {
+  flex: 1; /* Cada botão ocupa espaço igual */
+  text-align: center; /* Centraliza o conteúdo dentro do item */
+}
+
+.footer_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc107; /* Cor laranja */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%; /* Ajusta a largura de cada botão */
+}
+
+.footer_button:hover {
+  background-color: #d19f29; /* Laranja mais escuro no hover */
+}
