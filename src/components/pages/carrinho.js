@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./carrinho.module.css";
 
 export default function Carrinho() {
+    const [showPopup, setShowPopup] = useState(false); // Controla a visibilidade do pop-up
+
+    const handleCheckout = () => {
+
+        setShowPopup(true); // Exibe o pop-up
+        setTimeout(() => {
+            setShowPopup(false);
+        }, 3000);//delay
+    };
+
     return (
         <div className={styles.container}>
             {/* Título */}
@@ -42,9 +52,19 @@ export default function Carrinho() {
             </div>
 
             {/* Botão de Finalizar */}
-            <button className={styles.checkoutButton}>
+            <button
+                className={styles.checkoutButton}
+                onClick={handleCheckout}
+            >
                 FINALIZAR PEDIDO <span className={styles.arrow}>→</span>
             </button>
+
+            {/* Pop-up de Confirmação */}
+            {showPopup && (
+                <div className={styles.popup}>
+                    Pedido confirmado com sucesso!
+                </div>
+            )}
         </div>
     );
 }
