@@ -11,8 +11,8 @@ function Home() {
       <ul className={styles.ul}>
         <li className={styles.li}><LinkButton to="/" text="Informações do usuário" /></li>
         <li className={styles.li}><LinkButton to="/" text="Preferências" /></li>
-        <li className={styles.li}><LinkButton to="/" text="Pedidos anteriores" /></li>
-        <li className={styles.li}><LinkButton to="/" text="Status do pedido" /></li>
+        <li className={styles.li}><LinkButton to="/PedidosAnteriores" text="Pedidos anteriores" /></li>
+        <li className={styles.li}><LinkButton to="/PedidosAnteriores" text="Status do pedido" /></li>
       </ul>
     </section>
   )

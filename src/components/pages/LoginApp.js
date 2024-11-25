@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LoginApp.module.css";
-
+import LinkButton from '../layout/LinkButton'
 export default function LoginApp() {
   return (
     <div className={styles.container}>
@@ -48,6 +48,7 @@ export default function LoginApp() {
             <a href="/" className={styles.link}>
               Esqueceu a senha?
             </a>
+            <LinkButton to="/" text="Logar" />
           </div>
         </div>
       </form>
