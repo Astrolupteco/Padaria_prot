@@ -12,24 +12,24 @@ function Navbar() {
 
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Link to="/">
+            <Link to="/LoginApp">
               <img src={logo2} alt="Login" />
             </Link></li>
           <li className={styles.item}>
             <Link to="/">Home</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/projects">Cardápio</Link>
+            <Link to="/cardapio">Cardápio</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/">
+            <Link to="/Inicio">
               <img src={logo} alt="Logo_principal" />
             </Link></li>
           <li className={styles.item}>
             <Link to="/company">Sobre nós</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/">
+            <Link to="/carrinho">
               <img src={logo3} alt="Carrinho" />
             </Link></li>
         </ul>

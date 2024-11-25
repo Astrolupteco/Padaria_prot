@@ -10,12 +10,23 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "category": {
+        "id": "1",
+        "name": "Doces"
+      },
+      "name": "bolo de nata",
+      "budget": "5",
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Doce"
+      "name": "Doces"
     },
     {
       "id": 2,
@@ -23,7 +34,62 @@
     },
     {
       "id": 3,
-      "name": "Materia prima"
+      "name": "bolos"
+    },
+    {
+      "id": 4,
+      "name": "bebidas"
+    }
+  ],
+  "doces": [
+    {
+      "id": 1,
+      "name": "Doce",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "name": "Pudim",
+      "price": "10"
+    },
+    {
+      "id": 3,
+      "name": "Mousee de morango",
+      "price": "10"
+    }
+  ],
+  "bolos": [
+    {
+      "id": 1,
+      "name": "Bolo de morango",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "name": "Bolo de limão",
+      "price": "10"
+    },
+    {
+      "id": 3,
+      "name": "Bolo de marta rocha",
+      "price": "10"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 1,
+      "name": "Refrigerante",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "name": "Suco",
+      "price": "10"
+    },
+    {
+      "id": 3,
+      "name": "Água",
+      "price": "10"
     }
   ]
 }

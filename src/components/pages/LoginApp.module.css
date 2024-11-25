@@ -1,0 +1,98 @@
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    /* Cor de fundo amarelada */
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(70, 36, 36, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logoContainer {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Título */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form {
+    text-align: left;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #8b4513;
+    /* Cor marrom */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #d2691e;
+    /* Cor marrom claro */
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Opções adicionais */
+.optionsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.rememberText {
+    font-size: 14px;
+    color: #000;
+}
+
+.links {
+    font-size: 14px;
+}
+
+.link {
+    color: #0000ee;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: #000;
+}

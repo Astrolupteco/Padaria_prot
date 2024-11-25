@@ -1,0 +1,16 @@
+.docesContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column
+}
+
+.doceItem {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 50px;
+    border-bottom: 1px solid #b61f7c;
+    background-color: #FF1493;
+    margin: 1px;
+}

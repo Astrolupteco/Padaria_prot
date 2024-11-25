@@ -10,12 +10,18 @@ import Contact from './components/pages/Contact'
 import Project from './components/pages/Project'
 import PedidosAnteriores from './components/pages/PedidosAnteriores'
 import Funcionario from './components/pages/Funcionario'
+import LoginApp from './components/pages/LoginApp'
+import Carrinho from './components/pages/carrinho'
+import Inicio from './components/pages/inicio'
+import Cardapio from './components/pages/cardapio'
+import Doces from './components/pages/doces'
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
+
         <Container customClass="min-height">
           <Route exact path="/">
             <Home />
@@ -40,6 +46,21 @@ function App() {
           </Route>
           <Route path="/Funcionario">
             <Funcionario />
+          </Route>
+          <Route path="/LoginApp">
+            <LoginApp />
+          </Route>
+          <Route path="/carrinho">
+            <Carrinho />
+          </Route>
+          <Route path="/inicio">
+            <Inicio />
+          </Route>
+          <Route path="/cardapio">
+            <Cardapio />
+          </Route>
+          <Route path="/doces">
+            <Doces />
           </Route>
         </Container>
       </Switch>

@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import ProjectForm from '../project/ProjectForm'
 
 import styles from './NewProject.module.css'
-
+import LinkButton from '../layout/LinkButton'
 function NewProject() {
   const history = useHistory()
 
@@ -28,8 +28,11 @@ function NewProject() {
   return (
     <div className={styles.newproject_container}>
       <h1>Adicionar Produto</h1>
-      <p>Crie e adicione seu produto</p>
+
+      <p>Crie e adicione seu produto <LinkButton to="/projects" text="Meus Produto" /></p>
+
       <ProjectForm handleSubmit={createPost} btnText="Criar Produto" />
+
     </div>
   )
 }

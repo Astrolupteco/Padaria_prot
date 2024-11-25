@@ -1,0 +1,64 @@
+.cardapioContainer {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.cardapioContainer h1 {
+    color: #333;
+    text-align: center;
+}
+
+.cardapioContainer ul {
+    list-style-type: none;
+    padding: 0;
+    width: 350px;
+}
+
+.cardapioContainer li {
+    margin: 50px 0;
+    font-size: 18px;
+}
+
+.cardapioContainer1 {
+    padding: 40px;
+    background-color: #FF8C00;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cardapioContainer2 {
+    padding: 40px;
+    background-color: #FF8C00;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.cardapioContainer3 {
+    padding: 40px;
+    background-color: #FF8C00;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Header com barra de pesquisa */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
