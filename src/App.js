@@ -15,6 +15,7 @@ import Carrinho from './components/pages/carrinho'
 import Inicio from './components/pages/inicio'
 import Cardapio from './components/pages/cardapio'
 import Doces from './components/pages/doces'
+import Comprar from './components/pages/comprar'
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
           </Route>
           <Route path="/doces">
             <Doces />
+          </Route>
+          <Route path="/comprar">
+            <Comprar />
           </Route>
         </Container>
       </Switch>

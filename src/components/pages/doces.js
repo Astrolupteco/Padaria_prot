@@ -1,16 +1,14 @@
 import React from 'react';
 import styles from './doces.module.css';
-import Container from '../layout/Container'
 import { useState, useEffect } from 'react'
-import ProjectCard from '../project/ProjectCard'
+import { Link } from 'react-router-dom'
 
 
 const Doces = () => {
     const [doces, setDoces] = useState([]);
     const [bolos, setBolos] = useState([]);
     const [bebidas, setBebidas] = useState([]);
-    const [removeLoading, setRemoveLoading] = useState(false)
-
+    const [removeLoading, setRemoveLoading] = useState(false);
     useEffect(() => {
         // Para ver o loading
         setTimeout(
@@ -61,12 +59,16 @@ const Doces = () => {
 
     return (
         <div className={styles.docesContainer}>
+
             <h2>Doces classicos</h2>
             <ul>
                 {doces.length > 0 &&
                     doces.map(doces => (
                         <li key={doces.name} className={styles.doceItem}>
                             {doces.name} - R$ {doces.price}
+                            <Link className={styles.btn} to="/comprar">
+                                Comprar
+                            </Link>
                         </li>
                     ))}
             </ul>
@@ -76,7 +78,11 @@ const Doces = () => {
                     bolos.map(bolos => (
                         <li key={bolos.name} className={styles.doceItem}>
                             {bolos.name} - R$ {bolos.price}
+                            <Link className={styles.btn} to="/comprar">
+                                Comprar
+                            </Link>
                         </li>
+
                     ))}
             </ul>
 
@@ -86,6 +92,9 @@ const Doces = () => {
                     bebidas.map(bebidas => (
                         <li key={bebidas.name} className={styles.doceItem}>
                             {bebidas.name} - R$ {bebidas.price}
+                            <Link className={styles.btn} to="/comprar">
+                                Comprar
+                            </Link>
                         </li>
                     ))}
             </ul>
