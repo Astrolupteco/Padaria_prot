@@ -16,7 +16,7 @@ function Navbar() {
               <img src={logo2} alt="Login" />
             </Link></li>
           <li className={styles.item}>
-            <Link to="/Inicio">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className={styles.item}>
             <Link to="/cardapio">Cardápio</Link>
