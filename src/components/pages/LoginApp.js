@@ -48,7 +48,7 @@ export default function LoginApp() {
             <a href="/" className={styles.link}>
               Esqueceu a senha?
             </a>
-            <LinkButton to="/" text="Logar" />
+            <LinkButton to="/home" text="Logar" />
           </div>
         </div>
       </form>
