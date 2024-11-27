@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fffbe8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.select,
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d9ad7c;
+    border-radius: 5px;
+    background-color: #ffd89e;
+    color: #000;
+    appearance: none;
+}
+
+.select {
+    background-image: url('data:image/svg+xml;base64,...');
+    /* Ícone de dropdown, caso necessário */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background-color: #c6f3c6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #b0eab0;
+}
+
+.popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+}

@@ -16,6 +16,8 @@ import Inicio from './components/pages/inicio'
 import Cardapio from './components/pages/cardapio'
 import Doces from './components/pages/doces'
 import Comprar from './components/pages/comprar'
+import Preference from './components/pages/preference'
+import Adpromocao from './components/pages/Adpromocao'
 
 function App() {
   return (
@@ -65,6 +67,12 @@ function App() {
           </Route>
           <Route path="/comprar">
             <Comprar />
+          </Route>
+          <Route path="/preference">
+            <Preference />
+          </Route>
+          <Route path="/Adpromocao">
+            <Adpromocao />
           </Route>
         </Container>
       </Switch>

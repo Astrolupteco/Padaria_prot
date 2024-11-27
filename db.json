@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "name": "açucar",
-      "budget": "21",
-      "category": {
-        "id": "1",
-        "name": "Doce"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
       "category": {
         "id": "1",
         "name": "Doces"
@@ -21,6 +10,17 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "teste",
+      "budget": "2",
+      "category": {
+        "id": "2",
+        "name": "Salgado"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
