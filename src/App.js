@@ -24,7 +24,7 @@ function App() {
       <Switch>
 
         <Container customClass="min-height">
-          <Route exact path="/Home">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/projects">
