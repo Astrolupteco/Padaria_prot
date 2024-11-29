@@ -113,3 +113,10 @@
     text-align: center;
     z-index: 1000;
 }
+.li {
+    list-style-type: none;
+    padding: 1em;
+    margin-bottom: 2em;
+    align-items: center;
+    display: flex;
+}

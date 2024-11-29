@@ -18,7 +18,8 @@ import Doces from './components/pages/doces'
 import Comprar from './components/pages/comprar'
 import Preference from './components/pages/preference'
 import Adpromocao from './components/pages/Adpromocao'
-
+import Entrega from './components/pages/entrega'
+import Pagamento from './components/pages/pagamento'
 function App() {
   return (
     <Router>
@@ -73,6 +74,12 @@ function App() {
           </Route>
           <Route path="/Adpromocao">
             <Adpromocao />
+          </Route>
+          <Route path="/entrega">
+            <Entrega />
+          </Route>
+          <Route path="/pagamento">
+            <Pagamento />
           </Route>
         </Container>
       </Switch>

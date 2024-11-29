@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./carrinho.module.css";
+import LinkButton from '../layout/LinkButton'
 
 export default function Carrinho() {
     const [showPopup, setShowPopup] = useState(false); // Controla a visibilidade do pop-up
@@ -52,12 +53,7 @@ export default function Carrinho() {
             </div>
 
             {/* Botão de Finalizar */}
-            <button
-                className={styles.checkoutButton}
-                onClick={handleCheckout}
-            >
-                FINALIZAR PEDIDO <span className={styles.arrow}>→</span>
-            </button>
+            <li className={styles.li}><LinkButton to="/entrega" text="Finalizar pedido" /></li>
 
             {/* Pop-up de Confirmação */}
             {showPopup && (

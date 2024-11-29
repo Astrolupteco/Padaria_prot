@@ -90,3 +90,25 @@
 .cartIcon {
     margin-left: 5px;
 }
+.popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.li {
+    list-style-type: none;
+    padding: 1em;
+    margin-bottom: 2em;
+    align-items: center;
+    display: flex;
+}

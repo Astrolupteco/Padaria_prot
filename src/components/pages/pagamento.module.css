@@ -1,0 +1,80 @@
+/* Estilo principal do contêiner */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #fff7db;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do título */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Estilo do subtítulo */
+.subtitle {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Container das opções */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Botões de opção */
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f0b27a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:hover {
+    background-color: #e59866;
+}
+
+/* Ícones */
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Botão selecionado */
+.selected {
+    background-color: #d35400;
+}
+
+/* Botão para concluir */
+.submit {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #a5d6a7;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #81c784;
+}

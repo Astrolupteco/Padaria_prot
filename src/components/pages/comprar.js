@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./comprar.module.css";
 import logo from "../../img/prato.png";
 import { Link } from 'react-router-dom'
 const Comprar = () => {
+    const [showPopup, setShowPopup] = useState(false); // Controla a visibilidade do pop-up
+
+    const handleCheckout = () => {
+
+        setShowPopup(true); // Exibe o pop-up
+        setTimeout(() => {
+            setShowPopup(false);
+        }, 3000);//delay
+    };
     return (
         <div className={styles.container}>
             <main className={styles.main}>
@@ -33,10 +42,18 @@ const Comprar = () => {
                         Adicional 4 R$ 6,50
                     </label>
                 </div>
+                <button
+                    className={styles.addToCart}
+                    onClick={handleCheckout}
+                >
 
-                <Link className={styles.addToCart} to="carrinho">
-                    Adicionar   <span className={styles.cartIcon}>🛒</span>
-                </Link>
+                    Adicionar<span className={styles.cartIcon}>🛒</span>
+                </button>
+                {showPopup && (
+                    <div className={styles.popup}>
+                        Produto adicionado ao carrinho
+                    </div>
+                )}
             </main>
         </div >
     );
