@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from "react";
 import styles from './PedidosAnteriores.module.css';
 import logo from '../../img/pedido-online.png';
+
 const pedidos = [
   {
     id: 1,
@@ -23,6 +24,23 @@ const pedidos = [
 ];
 
 const PedidosAnteriores = () => {
+  const [botaoVisivel, setBotaoVisivel] = useState(
+    pedidos.reduce((acc, pedido) => {
+      acc[pedido.id] = true; // Define cada botão como visível inicialmente
+      return acc;
+    }, {})
+  );
+
+  const [showPopup, setShowPopup] = useState(false); // Controla a visibilidade do pop-up
+
+  const handleCheckout = (id) => {
+    setBotaoVisivel((prev) => ({ ...prev, [id]: false })); // Remove o botão para o pedido correspondente
+    setShowPopup(true); // Exibe o pop-up
+    setTimeout(() => {
+      setShowPopup(false); // Esconde o pop-up após 3 segundos
+    }, 3000);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -35,6 +53,19 @@ const PedidosAnteriores = () => {
           <p>Confirmado em {pedido.confirmadoEm}</p>
           <p>Saiu para entrega em {pedido.saiuParaEntrega}</p>
           <p>Pagamento {pedido.pagamento}</p>
+
+          {/* Renderiza o botão somente se ele estiver visível */}
+          {botaoVisivel[pedido.id] && (
+            <button className={styles.btn} onClick={() => handleCheckout(pedido.id)}>
+              Confirmar Recebimento do Pedido
+            </button>
+          )}
+
+          {showPopup && (
+            <div className={styles.popup}>
+              Pedido confirmado com sucesso!
+            </div>
+          )}
         </div>
       ))}
     </div>
